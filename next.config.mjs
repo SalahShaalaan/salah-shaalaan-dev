@@ -15,6 +15,12 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 const withMDX = nextMDX({

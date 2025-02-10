@@ -31,11 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function SingleProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function SingleProjectPage({ params }: Props) {
   const slug = params.slug;
   const product = products.find((p) => p.slug === slug);
 

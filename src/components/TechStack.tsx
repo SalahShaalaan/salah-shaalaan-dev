@@ -129,10 +129,12 @@ export const TechStack = () => {
                   item.className
                 )}
               >
-                <img
+                <Image
                   src={item.src}
                   alt={item.title}
                   className="w-full h-full object-contain"
+                  width={80}
+                  height={80}
                 />
               </div>
             )}
