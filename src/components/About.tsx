@@ -14,7 +14,7 @@ export default function About() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 my-10">
         {images.map((image, index) => (
           <motion.div
-            key={image}
+            key={index}
             initial={{
               opacity: 0,
               y: -50,
@@ -34,6 +34,8 @@ export default function About() {
               quality={100}
               alt="about"
               className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
+              placeholder="blur"
+              blurDataURL="/blur.jpg"
             />
           </motion.div>
         ))}
