@@ -13,8 +13,7 @@ const mainFont = Josefin_Sans({
 
 export const metadata: Metadata = {
   title: "Salah Shaalaan - Developer",
-  description:
-    "Full Stack Developer specializing in MERN Stack (MongoDB, Express.js, React.js, Node.js) with expertise in building scalable web applications. Experienced in Next.js, TypeScript, and modern web development practices. Creating responsive, high-performance solutions for real-world business challenges.",
+  description: "Frontend Developer | React, Next.js",
 };
 
 export default function RootLayout({
