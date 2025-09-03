@@ -44,53 +44,45 @@ export default function About() {
 
       <div className="max-w-4xl">
         <Paragraph className=" mt-4">
-          Hey there, I&apos;m a Full Stack Developer with a genuine passion for
-          building software solutions. Welcome to my portfolio where I share my
-          journey through the world of web development!
+          Hey! I&apos;m Salah, a frontend developer who&apos;s been in this game
+          for over 5 years now. What started as curiosity about how websites
+          work has turned into a full-blown passion for building cool stuff on
+          the web.
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          From the moment I wrote my first line of code, I knew I had found my
-          calling. As a full stack developer, I thrive on building complete
-          solutions from the ground up. My passion lies in crafting robust
-          applications that seamlessly connect frontend elegance with backend
-          power.
+          I&apos;ve spent most of my time crafting user interfaces and making
+          sure everything looks and feels just right. There&apos;s something
+          satisfying about turning a design into a smooth, interactive
+          experience that users actually enjoy.
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          My obsession with programming extends beyond just writing code.
-          I&apos;m constantly exploring new technologies, frameworks, and
-          methodologies. Whether it&apos;s optimizing database queries or
-          crafting responsive user interfaces, I find joy in every aspect of
-          software development.
+          Now I&apos;m on this exciting journey to become a MERN stack
+          developer. I&apos;m diving deep into MongoDB, Express, React, and
+          Node.js to build complete applications from front to back. It&apos;s
+          like learning a new language, but for building entire ecosystems
+          instead of just pretty faces.
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          What drives me is the endless pursuit of technical excellence. I
-          believe that great software is built on clean code, scalable
-          architecture, and attention to detail. Every project I tackle is an
-          opportunity to push boundaries and implement innovative solutions.
+          What I love about this field is that there&apos;s always something new
+          to learn. One day you&apos;re tweaking CSS animations, the next
+          you&apos;re setting up API endpoints. Keeps things interesting, you
+          know?
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          Through this portfolio, I&apos;m excited to showcase the projects and
-          solutions I&apos;ve crafted throughout my journey. Whether you&apos;re
-          a fellow developer looking to collaborate, a business seeking
-          technical expertise, or someone interested in the world of software
-          development, you&apos;ll find insights into my work and approach here.
+          This portfolio is where I showcase the projects I&apos;ve been working
+          on - from simple landing pages to more complex applications. It&apos;s
+          a mix of my frontend work and the MERN projects I&apos;m building as I
+          level up my skills.
         </Paragraph>
 
         <Paragraph className=" mt-4">
-          Join me in exploring the fascinating world of full stack development,
-          where frontend meets backend, where databases talk to APIs, and where
-          complex problems transform into elegant solutions. Let&apos;s dive
-          deep into the art and science of building modern web applications.
-        </Paragraph>
-
-        <Paragraph className=" mt-4">
-          Thank you for visiting my portfolio, and I look forward to potentially
-          collaborating on exciting projects that push the boundaries of
-          what&apos;s possible in software development.
+          If you&apos;re here looking to collaborate or just curious about my
+          work, feel free to reach out! I&apos;m always up for discussing new
+          projects or just chatting about the latest in web development.
         </Paragraph>
       </div>
     </div>
