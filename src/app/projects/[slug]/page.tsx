@@ -5,6 +5,7 @@ import { Paragraph } from "@/components/Paragraph";
 import { SingleProduct } from "@/components/Product";
 import { Products } from "@/components/Products";
 import { products } from "@/constants/products";
+import { figmaProjects } from "@/constants/figmaProjects";
 import { Product } from "@/types/products";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -16,7 +17,9 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
-  const product = products.find((p) => p.slug === slug) as Product | undefined;
+  const product = [...products, ...figmaProjects].find(
+    (p) => p.slug === slug
+  ) as Product | undefined;
   if (product) {
     return {
       title: product.title,
@@ -33,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function SingleProjectPage({ params }: Props) {
   const slug = params.slug;
-  const product = products.find((p) => p.slug === slug);
+  const product = [...products, ...figmaProjects].find((p) => p.slug === slug);
 
   if (!product) {
     redirect("/projects");

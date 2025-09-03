@@ -119,8 +119,10 @@ export const TechStack = () => {
                 src={item.src}
                 alt={item.title}
                 className={twMerge("object-contain", item.className)}
-                width={60}
-                height={60}
+                width={80}
+                height={80}
+                quality={100}
+                sizes="(max-width: 768px) 20vw, 10vw"
               />
             ) : (
               <div
@@ -133,12 +135,14 @@ export const TechStack = () => {
                   src={item.src}
                   alt={item.title}
                   className="w-full h-full object-contain"
-                  width={80}
-                  height={80}
+                  width={100}
+                  height={100}
+                  quality={100}
+                  sizes="(max-width: 768px) 20vw, 10vw"
                 />
               </div>
             )}
-            <span className="text-sm mt-1 text-[#B89650]">{item.title}</span>
+            <span className="text-sm mt-1 text-secondary">{item.title}</span>
           </div>
         ))}
       </div>

@@ -29,26 +29,27 @@ export default function About() {
           >
             <Image
               src={image}
-              width={200}
-              height={400}
+              width={300}
+              height={600}
               quality={100}
               alt="about"
               className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
               placeholder="blur"
               blurDataURL="/blur.jpg"
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </motion.div>
         ))}
       </div>
 
       <div className="max-w-4xl">
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           Hey there, I&apos;m a Full Stack Developer with a genuine passion for
           building software solutions. Welcome to my portfolio where I share my
           journey through the world of web development!
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           From the moment I wrote my first line of code, I knew I had found my
           calling. As a full stack developer, I thrive on building complete
           solutions from the ground up. My passion lies in crafting robust
@@ -56,7 +57,7 @@ export default function About() {
           power.
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           My obsession with programming extends beyond just writing code.
           I&apos;m constantly exploring new technologies, frameworks, and
           methodologies. Whether it&apos;s optimizing database queries or
@@ -64,14 +65,14 @@ export default function About() {
           software development.
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           What drives me is the endless pursuit of technical excellence. I
           believe that great software is built on clean code, scalable
           architecture, and attention to detail. Every project I tackle is an
           opportunity to push boundaries and implement innovative solutions.
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           Through this portfolio, I&apos;m excited to showcase the projects and
           solutions I&apos;ve crafted throughout my journey. Whether you&apos;re
           a fellow developer looking to collaborate, a business seeking
@@ -79,14 +80,14 @@ export default function About() {
           development, you&apos;ll find insights into my work and approach here.
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           Join me in exploring the fascinating world of full stack development,
           where frontend meets backend, where databases talk to APIs, and where
           complex problems transform into elegant solutions. Let&apos;s dive
           deep into the art and science of building modern web applications.
         </Paragraph>
 
-        <Paragraph className=" mt-4 text-[#1B2A4E]">
+        <Paragraph className=" mt-4">
           Thank you for visiting my portfolio, and I look forward to potentially
           collaborating on exciting projects that push the boundaries of
           what&apos;s possible in software development.

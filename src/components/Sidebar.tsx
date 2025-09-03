@@ -24,7 +24,7 @@ export const Sidebar = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.2, ease: "linear" }}
             exit={{ x: -200 }}
-            className="px-6  z-[100] py-10 bg-neutral-300 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
+            className="px-6  z-[100] py-10 bg-white border-r border-gray-200 max-w-[14rem] lg:w-fit  fixed lg:relative  h-screen left-0 flex flex-col justify-between"
           >
             <div className="flex-1 overflow-auto">
               <SidebarHeader />
@@ -34,7 +34,7 @@ export const Sidebar = () => {
         )}
       </AnimatePresence>
       <button
-        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50"
+        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-gray-200 rounded-full backdrop-blur-sm flex items-center justify-center z-50 bg-white"
         onClick={() => setOpen(!open)}
       >
         <IconLayoutSidebarRightCollapse className="h-4 w-4 text-secondary" />
@@ -61,13 +61,14 @@ export const Navigation = ({
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
             "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
-            isActive(link.href) && "bg-white shadow-lg text-primary"
+            isActive(link.href) &&
+              "bg-gray-50 shadow-sm text-primary border border-gray-200"
           )}
         >
           <link.icon
             className={twMerge(
               "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
+              isActive(link.href) && "text-accent"
             )}
           />
           <span>{link.label}</span>
@@ -89,7 +90,7 @@ export const Navigation = ({
           <link.icon
             className={twMerge(
               "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
+              isActive(link.href) && "text-accent"
             )}
           />
           <span>{link.label}</span>
@@ -105,13 +106,15 @@ const SidebarHeader = () => {
       <Image
         src="/me.png"
         alt="Avatar"
-        height="40"
-        width="40"
+        height="60"
+        width="60"
         className="object-cover object-top rounded-full flex-shrink-0"
+        quality={100}
+        sizes="60px"
       />
       <div className="flex text-sm flex-col">
-        <p className="font-bold text-primary">Salah Shaalaan</p>
-        <p className="font-light text-secondary">Developer</p>
+        <p className="font-bold text-[#344054]">Salah Shaalaan</p>
+        <p className="text-xs">Frontend Developer</p>
       </div>
     </div>
   );

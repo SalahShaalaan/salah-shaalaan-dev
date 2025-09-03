@@ -1,13 +1,12 @@
 import { Sidebar } from "@/components/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import { Footer } from "@/components/Footer";
 
-const mainFont = Josefin_Sans({
+const mainFont = Open_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
   display: "swap",
 });
 
@@ -26,12 +25,12 @@ export default function RootLayout({
       <body
         className={twMerge(
           mainFont.className,
-          "flex antialiased h-screen overflow-hidden bg-gray-100"
+          "flex antialiased h-screen overflow-hidden bg-gray-50"
         )}
       >
         <Sidebar />
-        <div className="lg:pl-2 lg:pt-2 bg-[#faf7f5] flex-1 overflow-y-auto">
-          <div className="flex-1 bg-mainBlack min-h-screen lg:rounded-tl-xl border border-transparent lg:border-[#B89650] overflow-y-auto">
+        <div className="lg:pl-2 lg:pt-2 bg-white flex-1 overflow-y-auto">
+          <div className="flex-1 bg-background min-h-screen lg:rounded-tl-xl border border-transparent lg:border-gray-200 overflow-y-auto">
             {children}
             <Footer />
           </div>

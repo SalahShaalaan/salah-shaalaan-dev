@@ -87,8 +87,8 @@ export const Contact = () => {
             value={formData.name.value}
             onChange={(e) => handleInputChange("name", e.target.value)}
             className={`w-full p-3 bg-transparent border ${
-              formData.name.error ? "border-red-500" : "border-[#B89650]"
-            } rounded focus:outline-none focus:ring-2 focus:ring-[#B89650]`}
+              formData.name.error ? "border-red-500" : "border-gray-200"
+            } rounded focus:outline-none focus:ring-2 focus:ring-accent`}
           />
           {formData.name.error && (
             <p className="text-red-500 text-sm mt-1">{formData.name.error}</p>
@@ -102,8 +102,8 @@ export const Contact = () => {
             value={formData.email.value}
             onChange={(e) => handleInputChange("email", e.target.value)}
             className={`w-full p-3 bg-transparent border ${
-              formData.email.error ? "border-red-500" : "border-[#B89650]"
-            } rounded focus:outline-none focus:ring-2 focus:ring-[#B89650]`}
+              formData.email.error ? "border-red-500" : "border-gray-200"
+            } rounded focus:outline-none focus:ring-2 focus:ring-accent`}
           />
           {formData.email.error && (
             <p className="text-red-500 text-sm mt-1">{formData.email.error}</p>
@@ -117,8 +117,8 @@ export const Contact = () => {
             onChange={(e) => handleInputChange("message", e.target.value)}
             rows={5}
             className={`w-full p-3 bg-transparent border ${
-              formData.message.error ? "border-red-500" : "border-[#B89650]"
-            } rounded focus:outline-none focus:ring-2 focus:ring-[#B89650]`}
+              formData.message.error ? "border-red-500" : "border-gray-200"
+            } rounded focus:outline-none focus:ring-2 focus:ring-accent`}
           />
           {formData.message.error && (
             <p className="text-red-500 text-sm mt-1">
@@ -129,7 +129,7 @@ export const Contact = () => {
 
         <button
           type="submit"
-          className="w-full bg-[#B89650] text-white py-3 px-6 rounded hover:bg-[#A68547] transition-colors"
+          className="w-full bg-accent text-white py-3 px-6 rounded hover:bg-accent/90 transition-colors"
         >
           Send via Email
         </button>

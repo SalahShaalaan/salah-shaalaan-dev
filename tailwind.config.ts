@@ -11,8 +11,11 @@ const config = {
   theme: {
     extend: {
       colors: {
-        mainBlack: "#1B2A4E",
-        mainGold: "#B89650",
+        primary: "#374151", // Dark gray for text
+        secondary: "#6B7280", // Medium gray for secondary text
+        accent: "#3B82F6", // Blue accent for highlights
+        border: "#E5E7EB", // Light gray for borders (gray-200)
+        background: "#FFFFFF", // Pure white background
       },
     },
   },
