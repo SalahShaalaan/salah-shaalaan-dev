@@ -5,7 +5,7 @@ import { Paragraph } from "@/components/Paragraph";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | John Doe",
+  title: "Contact | Salah Shaalaan",
   description:
     "Let's collaborate on your next web project. Experienced Full Stack Developer available for freelance work, technical consulting, and development partnerships. Reach out to discuss how we can bring your ideas to life using cutting-edge web technologies.",
 };
